@@ -31,7 +31,7 @@ export function A(props: RouterLinkProps) {
 					href={
 						props.addLocale
 							? `/${loc}${props.href}`.replace(/\/$/, "")
-							: props.href
+							: props.href.replace(/\/$/, "")
 					}
 					hreflang={loc}
 					rel="alternate"
